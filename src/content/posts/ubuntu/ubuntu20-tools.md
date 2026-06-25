@@ -633,7 +633,17 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.25+9-LTS-256, mixed mode)
 
 ----
 
-# 9. Wine-runner
+# 9. Typora
+
+激活的
+
+[Yporaject_init.zip](https://1831996731.share.123pan.cn/123pan/wdzVjv-R9Lyv)
+
+::github{repo="liheji/Yporaject "}
+
+
+
+# 10. Wine-runner
 
 ![image-20260624110703271](https://vip.123pan.cn/1831996731/a_PicBed/ubuntu/ubuntu20-tools/20260624110703389.webp)
 
