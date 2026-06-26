@@ -217,29 +217,46 @@ Jetson Nano 全系列国产板 JetPack 版本适配
 
 
 
+# 3. 资料
 
+转载于：https://www.waveshare.net/wiki/Jetson_Nano_Developer_Kit#.E6.8A.80.E6.9C.AF.E6.94.AF.E6.8C.81
 
+## a. 简介
 
+Jetson Nano Developer Kit 是一款体积小巧当功能强大的AI开发套件，搭载四核Cortex-A57处理器，128核Maxwell GPU 以及4GB LPDDR内存。支持NVIDIA JetPack。可以并行运行多个神经网络对图像分类，目标检测，分割和语音处理等应用。
 
+## b. 视频演示
 
+<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1iE411b7ww&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &autoplay=0> </iframe>
 
+## c. 学习资料
 
+- [Jetson nano使用手册中文版](https://www.waveshare.net/w/upload/2/26/Jetson_Nano_Developer_Kit_User_Guide_cn.pdf)
+- [Jetson Nano开发套件入门教程](https://www.waveshare.net/w/upload/8/8a/Jetson_Nano_User_Manual_cn.pdf)
+- [Jetson Nano Case (C) 组装手册](https://www.waveshare.net/wiki/Jetson_Nano_Case_(C))
 
+## d. NVIDIA官方资料
 
+- [Jetson Nano 入门教程](https://www.nvidia.com/JetsonNano-Start)
+- [Jetson Nano 使用手册](https://www.waveshare.net/w/upload/6/6f/Jetson_Nano_Developer_Kit_User_Guide.pdf)
+- [Jetson Nano 论坛](https://devtalk.nvidia.com/default/board/371/jetson-nano/)
+- [Nvidia Jetson Github](https://github.com/dusty-nv)
+- [NVIDIA官方免费AI教程（基于Jetson nano）](https://courses.nvidia.com/courses/course-v1:DLI+C-RX-02+V1/about)
+- [Jetson Nano Module 3D 图纸](https://developer.nvidia.com/embedded/dlc/jetson-nano-3D-CAD-Step-Model)
+- [Jetson Nano developer kit (B01)3D图纸](https://developer.nvidia.com/jetson-nano-developer-kit-b01-3d-cad-step-model)
+- [NVIDA深度学习学院（有相关深度学习的教程提供）](https://www.nvidia.cn/deep-learning-ai/education/)
+- [NVIDIA Multimedia说明文档](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fmultimedia.html%23)
 
+## e. 镜像
 
+- [Jetson Nano 下载链接](https://developer.nvidia.com/embedded/downloads)
+- [提取码：0nik （4.4.1版本，百度网盘链接）](https://pan.baidu.com/s/1jJfG8M5keHsnuvg7Bq5jvQ)
 
+## f. 软件
 
+- [Panasonic_SDFormatter-格式化软件](https://www.waveshare.net/w/upload/d/d7/Panasonic_SDFormatter.zip)
+- [Win32DiskImager-下载镜像软件](https://www.waveshare.net/w/upload/7/76/Win32DiskImager.zip)
+- [putty](https://www.waveshare.net/w/upload/5/56/Putty.zip)
 
-
-
-
-
-
-
-
-
-
-
-
+---
 
