@@ -8,8 +8,8 @@ tags: [资料链接]
 pinned: true
 draft: false
 author: larry
-password: ""
-passwordHint: ""
+password: "0746"
+passwordHint: "手机尾号是多少?"
 ---
 
 ---
