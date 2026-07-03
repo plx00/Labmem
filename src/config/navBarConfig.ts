@@ -29,15 +29,16 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			LinkPresets.Categories,
 
 			// 标签
-			LinkPresets.Tags,
+			// LinkPresets.Tags,
 		],
 	});
 
+	// // ❌ 注释原来这里独立添加友链和留言板的两个 if 块
+	// // 根据配置决定是否添加友链，在siteConfig关闭pages.friends时导航栏不显示友链
 	// 友链
-	links.push(LinkPresets.Friends);
-
+	// links.push(LinkPresets.Friends);
 	// 留言板
-	links.push(LinkPresets.Guestbook);
+	// links.push(LinkPresets.Guestbook);
 
 	// 我的及其子菜单
 	links.push({
@@ -45,6 +46,10 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		url: "#",
 		icon: "material-symbols:person",
 		children: [
+			// ✅ 友链和留言板
+			LinkPresets.Friends,
+			LinkPresets.Guestbook,
+			
 			// 相册
 			LinkPresets.Gallery,
 
@@ -53,6 +58,34 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 番组计划
 			LinkPresets.Bangumi,
+		],
+	});
+
+	// 自定义导航栏链接
+	links.push({
+		name: "链接",
+		url: "#",
+		icon: "material-symbols:link",
+		// 子菜单
+		children: [
+			{
+				name: "GitHub",
+				url: "https://github.com/plx00?tab=repositories",
+				external: true,
+				icon: "fa7-brands:github",
+			},
+			{
+				name: "QQ",
+				url: "https://qm.qq.com/q/LXtOP7qfy6",
+				external: true,
+				icon: "fa7-brands:qq",
+			},
+			{
+				name: "Firefly文档",
+				url: "https://docs-firefly.cuteleaf.cn",
+				external: true,
+				icon: "material-symbols:docs",
+			},
 		],
 	});
 
@@ -70,39 +103,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
-	// 自定义导航栏链接
-	links.push({
-		name: "链接",
-		url: "#",
-		icon: "material-symbols:link",
-		// 子菜单
-		children: [
-			{
-				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:github",
-			},
-			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
-				external: true,
-				icon: "fa7-brands:qq",
-			},
-			{
-				name: "Firefly文档",
-				url: "https://docs-firefly.cuteleaf.cn",
-				external: true,
-				icon: "material-symbols:docs",
-			},
-		],
-	});
 
 	// 文档链接
 	// links.push({

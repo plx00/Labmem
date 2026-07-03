@@ -1,4 +1,4 @@
-import type { FriendLink, FriendsPageConfig } from "../types/friendsConfig";
+import type { FriendLink, FriendsPageConfig } from "../types/config";
 
 // 可以在src/content/spec/friends.md中编写友链页面下方的自定义内容
 
@@ -23,6 +23,16 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "Labmem",
+		imgurl:
+			"https://i.imgs.ovh/2026/06/18/2afbe3d15350023677b950aa335ce7b5.png",
+		desc: "随笔",
+		siteurl: "https://xkon.xyz",
+		tags: ["Blog"],
+		weight: 99, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
 		title: "夏夜流萤",
 		imgurl:
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
@@ -31,6 +41,33 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
+	},
+	{
+		title: "番茄主理人",
+		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
+		desc: "坐而言不如起而行",
+		siteurl: "https://fqzlr.com/",
+		tags: ["Blog"],
+		weight: 9,
+		enabled: true,
+	},
+	{
+		title: "MmzMing的知识库",
+		imgurl: "https://i.stardots.io/784774835/StarDots-2026052116374135506.jpg",
+		desc: "哈基米，南北绿豆",
+		siteurl: "https://tblog.mmzhiku.xyz/",
+		tags: ["Blog"],
+		weight: 9,
+		enabled: true,
+	},
+	{
+		title: "Hyde Blog",
+		imgurl: "https://seasir.top/assets/avatar.avif",
+		desc: "人心中的成见是一座大山",
+		siteurl: "https://seasir.top/",
+		tags: ["Blog"],
+		weight: 9,
+		enabled: true,
 	},
 	{
 		title: "Firefly Docs",
