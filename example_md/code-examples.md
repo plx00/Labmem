@@ -77,6 +77,12 @@ console.log('标题属性示例')
 echo "此终端框架没有标题"
 ```
 
+```bash  title="Bash 终端示例"
+echo "此终端框架有标题"
+```
+
+
+
 ---
 
 ```powershell title="PowerShell 终端示例"
@@ -113,6 +119,18 @@ New-Alias tail Watch-Tail
 // 第7行 - 通过范围 "7-8" 定位
 // 第8行 - 通过范围 "7-8" 定位
 ```
+
+```python {1, 3, 6-7}
+print("1")
+print("2")
+print("3")
+print("4")
+print("5")
+print("6")
+print("7")
+```
+
+
 
 #### 选择行标记类型 (mark, ins, del)
 

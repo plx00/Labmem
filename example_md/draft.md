@@ -20,3 +20,21 @@ tags: [Markdown, 博客, 演示]
 category: 示例
 draft: false
 ---
+
+```
+
+```markdown
+---
+title: Firefly 简单使用指南
+published: 2016-01-02
+pinned: true
+description: "如何使用 Firefly 博客模板。"
+image: "./cover.avif"
+tags: ["Firefly", "博客", "Markdown", "使用指南"]
+category: 博客指南
+draft: false
+---
+
+```
+
+博客的快速开始：https://docs-firefly.cuteleaf.cn/zh/guide/getting-started.html
