@@ -193,43 +193,7 @@ network:
 
 ## d. Cartographer 安装
 
-还是鱼香 ROS 一键安装（大概时间为 5分钟）
-
-```bash
-wget http://fishros.com/install -O fishros && . fishros
-```
-
-选择`[9] 一键安装:Cartographer(18 20测试通过,16未测. updateTime 20240125)`  
-
-**添加工作空间环境到**`.bashrc` **文件**
-
-```bash
-echo "source ~/cartographer_ws/devel_isolated/setup.bash" >> ~/.bashrc
-```
-
-
-
-> [!TIP]
->
-> **可能会提示出错**
->
-> ![img](https://vip.123pan.cn/1831996731/a_PicBed/project/unitree/20260703000254523.webp)
->
-> **解决：**
->
-> 到主目录下创建的cartographer_ws目录下，输入
->
-> ```bash
-> catkin_make_isolated --install --use-ninja
-> ```
->
-> 等待编译成功，最后出现
->
-> ```bash
-> <== Finished processing package [4 of 4]: 'cartographer_rviz'
-> ```
->
-> ![img](https://vip.123pan.cn/1831996731/a_PicBed/project/unitree/20260703000339304.webp)
+参考安装：[Cartographer](/posts/ros/ros-package/#a-cartographer)
 
 ## e. 其他
 
@@ -1493,96 +1457,7 @@ rospack find robot_localization  # 输出路径则成功
 
 ### iii. rplidar_ros
 
-GitHub：[GitHub - Slamtec/rplidar_ros](https://github.com/slamtec/rplidar_ros)
-
-官网：[思岚科技（SLAMTEC）资源下载中心及技术支持联系方式](https://www.slamtec.com/cn/Support#rplidar-a-series)
-
-Wiki：[Home · robopeak/rplidar_ros Wiki · GitHub](https://github.com/robopeak/rplidar_ros/wiki)
-
-- **导包**
-
-  ```bash
-  # 进入navdg_ws工作空间目录
-  cd ~/navdgu_ws/src/goe_tools/
-  
-  # 克隆 rplidar_ros 代码到src/doge_tools目录下
-  git clone https://github.com/Slamtec/rplidar_ros.git 
-  
-  # 编译工作空间（跳过CATKIN_IGNORE标记的包）
-  cd ~/navdgu_ws && catkin build
-  
-  # 刷新当前终端的ROS环境变量，使编译后的包生效
-  source devel/setup.bash
-  ```
-
-- **LiDAR 端口**
-
-  - **查看设备号**
-
-    ```bash
-    jetson@nano:~/Desktop$ lsusb 
-    Bus 002 Device 002: ID 0bda:0411 Realtek Semiconductor Corp. 4-Port USB 3.1 Hub
-    Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-    Bus 001 Device 003: ID 8087:0a2b Intel Corp. 
-    Bus 001 Device 005: ID 10c4:ea60 Silicon Labs CP210x UART Bridge
-    Bus 001 Device 002: ID 0bda:5411 Realtek Semiconductor Corp. 4-Port USB 2.1 Hub
-    Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-    ```
-
-  - **查看是否端口识别**
-
-    ```bash
-    jetson@nano:~/Desktop$ ls -l /dev/ttyUSB*
-    crw-rw---- 1 root dialout 188, 0 dec 25 07:16 /dev/ttyUSB0
-    ```
-
-  - **创建或修改 udev 规则文件**
-
-    ```bash
-    sudo nano /etc/udev/rules.d/rplidar.rules 
-    # 或（适合有图形界面的系统）
-    sudo gedit /etc/udev/rules.d/rplidar.rules 
-    ```
-
-  - **添加以下内容**
-
-    ```bash
-    # 为 RPLIDAR (Silicon Labs CP210x 芯片，ID 10c4:ea60) 创建固定设备名
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE="0666", SYMLINK+="rplidar"
-    ```
-    - `SUBSYSTEM=="tty"`：限定为串口设备。
-    - `ATTRS{idVendor}=="10c4"` 和 `ATTRS{idProduct}=="ea60"`：匹配你的设备 ID。
-    - `MODE="0666"`：赋予设备读写权限（避免权限问题）。
-    - `SYMLINK+="rplidar"`：创建软链接 `/dev/rplidar` 指向实际设备（如 `/dev/ttyUSB0`）。
-  - **生效 udev 规则**
-    ```bash
-    sudo udevadm control --reload-rules
-    sudo udevadm trigger
-    ```
-
-    如果设备已连接，拔插一次 USB 线，让规则生效。
-  - **验证映射结果**
-    ```bash
-    jetson@nano:~/Desktop$ ls -l /dev/rplidar
-    lrwxrwxrwx 1 root root 7 dec 25 07:34 /dev/rplidar -> ttyUSB0
-    ```
-- **运行**
-  - **I. 运行rplidar节点并在rviz中查看**
-    ```bash
-    roslaunch rplidar_ros view_rplidar_a1.launch
-    ```
-
-    应该能在rviz上看到rplidar的扫描结果。
-    ![1774864322566-9a7a0a70-62e7-4b2a-940b-bd304535fd52](https://vip.123pan.cn/1831996731/a_PicBed/project/unitree/20260703004909361.webp)
-
-  - **II. 运行rplidar节点并使用测试应用查看**
-
-    应该能在控制台看到rplidar的扫描结果。
-    ![1774864318838-a8ee9e6b-8f56-4a62-bb80-aaa9d0a2ed7f](https://vip.123pan.cn/1831996731/a_PicBed/project/unitree/20260703005110452.webp)
-
-- **安装方向：**
-
-  ![1774864318929-0b6b2034-c5ae-45d7-9296-056e97f98bd8](https://vip.123pan.cn/1831996731/a_PicBed/project/unitree/20260703005151099.webp)
+参考安装：[rplidar_ros](/posts/ros/ros-package/#e-rplidar_ros)
 
 ### iv. wit_ros_imu
 
