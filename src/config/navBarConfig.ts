@@ -32,10 +32,13 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// LinkPresets.Tags,
 
 			// 美食
-			LinkPresets.Food,
+			LinkPresets.Foods
 			
 		],
 	});
+
+	// 美食
+	// links.push(LinkPresets.Foods;
 
 	// // ❌ 注释原来这里独立添加友链和留言板的两个 if 块
 	// // 根据配置决定是否添加友链，在siteConfig关闭pages.friends时导航栏不显示友链
@@ -190,11 +193,11 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		icon: "material-symbols:live-tv",
 		pageKey: "anime",
 	},
-	Food: {
+	Foods: {
 		name: "美食",
-		url: "/food/",
+		url: "/foods/",
 		icon: "twemoji:pot-of-food",
-		pageKey: "food",
+		pageKey: "foods",
 	},
 };
 
