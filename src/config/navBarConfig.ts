@@ -30,6 +30,10 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 标签
 			// LinkPresets.Tags,
+
+			// 美食
+			LinkPresets.Food,
+			
 		],
 	});
 
@@ -185,6 +189,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/anime/",
 		icon: "material-symbols:live-tv",
 		pageKey: "anime",
+	},
+	Food: {
+		name: "美食",
+		url: "/food/",
+		icon: "twemoji:pot-of-food",
+		pageKey: "food",
 	},
 };
 
