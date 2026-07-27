@@ -1,6 +1,6 @@
 ---
 title: Unitree 机器狗（二）：ROS导航
-published: 2026-03-19
+published: 2026-03-20
 updated: 2026-07-03
 description: 宇树机器狗 Go2-Air相关的二次开发
 image: /assets/bolg_cover/unitree-02.webp

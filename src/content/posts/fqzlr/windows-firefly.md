@@ -30,6 +30,9 @@ Firefly 是 Astro 静态博客主题，本文是作者的搭建笔记，为以�
 
 ## 三、分步安装教程
 ### 1\. 安装 Node\.js
+
+这个Linux安装的话，可以参考文章**claude-code**
+
 1. 访问 [https://nodejs\.org/](https://nodejs.org/)，下载 **LTS 版**。
 2. ![image.png|528](https://tu.fqzlr.com/file/blog/wenzhang/1777551551531_image.png)
 
