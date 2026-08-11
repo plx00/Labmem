@@ -19,3 +19,15 @@ passwordHint: ""
 > 这个没记录啥，基本上与Ubuntu章节的各种设置大同小异，可能以后会记录一些专属于树莓派的硬件特征与系统特征的问题
 
 > 若想查看以前记录的文档，可以查看`本地文档`或者`语雀`，这个文档很久之前写的了，2022年，都过期了，那时候树莓派官方还没有出树莓派版本的 `Ubuntu` 桌面版呢
+
+
+
+- 官网镜像
+  - 登陆官网即可查询下载
+
+- Ubuntu 镜像
+  - 查看文档 [Ubuntu 镜像](/posts/project/ubuntu-mirror/)
+
+- 安卓镜像
+  - https://konstakang.com/devices/rpi4/#google_vignette
+    - 有时间本地或者网盘存一份
