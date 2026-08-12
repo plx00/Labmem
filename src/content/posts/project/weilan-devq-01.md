@@ -3,7 +3,7 @@ title: WEILAN 机器狗（一）
 published: 2025-09-20
 updated: 2026-08-11
 description: 蔚蓝机器狗的基础使用与控制
-image: /assets/bolg_cover/weilan-devq-00.webp
+image: /assets/bolg_cover/weilan-devq-01.webp
 tags: [机器狗, ROS, 自动导航]
 category: 项目
 draft: false
@@ -25,6 +25,8 @@ passwordHint: ""
 Github：[AlphaDogDeveloper](https://github.com/AlphaDogDeveloper)
 
 [原文档PDF原件](https://1831996731.share.123pan.cn/123pan/wdzVjv-jgWvd)
+
+[各种代码包文件](https://1831996731.share.123pan.cn/123pan/wdzVjv-TFWvd)
 
 - **基础环境**
 

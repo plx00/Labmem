@@ -1,9 +1,9 @@
 ---
 title: WEILAN 机器狗（二）
 published: 2025-09-21
-updated: 2026-08-12
+updated: 2026-08-11
 description: 蔚蓝机器狗的群体控制
-image: /assets/bolg_cover/weilan-devq-00.webp
+image: /assets/bolg_cover/weilan-devq-02.webp
 tags: [机器狗, ROS, 群控]
 category: 项目
 draft: false
@@ -27,6 +27,8 @@ passwordHint: ""
 Github：[AlphaDogDeveloper](https://github.com/AlphaDogDeveloper)
 
 [原文档PDF原件](https://1831996731.share.123pan.cn/123pan/wdzVjv-jgWvd)
+
+[各种代码包文件](https://1831996731.share.123pan.cn/123pan/wdzVjv-TFWvd)
 
 - **基础环境**
 
@@ -542,12 +544,12 @@ a@ubuntu:~/Desktop$ python3 demo_control_9090.py
 >   ```bash
 >   # 终止dpkg、apt系列占用进程
 >   sudo killall dpkg apt apt-get
->                       
+>                             
 >   # 删除dpkg与apt缓存锁文件
 >   sudo rm /var/lib/dpkg/lock
 >   sudo rm /var/lib/dpkg/lock-frontend
 >   sudo rm /var/cache/apt/archives/lock
->                       
+>                             
 >   # 修复异常中断的软件包配置
 >   sudo dpkg --configure -a
 >   ```
@@ -739,10 +741,10 @@ RUN Choose Task:[请输入括号内的数字]
 >   ```bash
 >   # 可以通过修改系统的默认运行级别来实现，将默认运行级别设置为多用户模式（文本模式），执行以下命令
 >   sudo systemctl set-default multi-user.target
->                   
+>                         
 >   # 然后重启系统
 >   sudo reboot
->                   
+>                         
 >   # 如果之后又想恢复到图形界面模式，可以执行以下命令
 >   sudo systemctl set- default graphical.target
 >   sudo reboot
